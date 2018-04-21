@@ -1,0 +1,372 @@
+.b {
+    border: 1px solid springgreen;
+}
+.container-width{
+    margin: auto;
+    width: 1012px;
+    border: 1px solid springgreen;
+}
+.ftc {
+    width: fit-content;
+}
+
+.inline-block,
+.ilb {
+    display: inline-block;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    
+}
+
+.header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #24292e;
+}
+
+.header-div {
+    display: block;
+    margin: auto;
+    max-width: 1012px;
+    height: 32px;
+}
+
+.search-div {}
+
+.octicon-mark-github {
+    height: 32px;
+    width: 32px;
+}
+
+.header-git-logo {
+    margin-left: 16px;
+    width: fit-content;
+    height: 32px;
+}
+
+.search {
+    margin-left: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 300px;
+    min-height: 30px;
+    float: left;
+    background: #44474C;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+}
+
+svg {
+    fill: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar-ul a,
+.nav-bar-ul a:visited {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-bar-ul a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nab-bar {
+    position: relative;
+    bottom: 10px;
+}
+
+.nav-bar-ul li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: (0, 0, 0, 0);
+}
+
+.settings {
+    float: right;
+}
+
+.settings div {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.avatar {
+    position: relative;
+    top: 3px;
+    border-radius: 3px;
+}
+
+/* main body */
+
+.main {}
+
+.main-div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1012px;
+}
+
+.profile-div {
+    position: relative;
+    float: left;
+    padding-right: 16px;
+    width: 245px;
+}
+
+.profile-img-link {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.profile-img {
+    border-radius: 6px;
+    height: 230px;
+    width: 230px;
+}
+
+.user-name-div {
+    padding: 16px 0;
+    color: rgb(36, 41, 46);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px !important;
+    width: 229.002px;
+}
+
+.user-name {
+    display: block;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 300 !important;
+    line-height: 24px;
+    color: #666;
+    background: #FFFFFF !important;
+}
+
+.add-bio-div,
+.edit-profile-div,
+.textarea-div {
+    margin-bottom: 16px;
+}
+
+.add-bio,
+.edit-profile {
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    padding: 6px 12px;
+    border-radius: 3.5px;
+    width: 100%;
+}
+
+.btn {
+    color: #24292e;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+}
+.textarea-div{
+    display: none;
+}
+.textarea {
+    padding: 6px 8px;
+    border: 1px solid #d1d5da;
+    margin-bottom: 8px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+}
+
+.textarea-btn-div {
+    margin: 0;
+    padding: 0;
+}
+
+.save-btn {
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+    color: #fff;
+}
+
+.cancel-btn {
+    background-color: rgb(233, 236, 239);
+    box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+    color: rgb(36, 41, 46);
+}
+
+.save-btn,
+.cancel-btn {
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.textarea-btn {
+    padding: 3px 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.main-content-div {
+    position: relative;
+    float: left;
+    padding: 8px;
+    width: 75%;
+}
+
+.main-content-nav-bar {
+    border-bottom: 1px solid rgb(209, 213, 218);
+    background: #FFFFFF;
+    width: 706.007px;
+}
+
+.inline-block {
+    display: flex;
+    margin-bottom: -1px;
+}
+
+.inline-block a {
+    display: inline-block;
+    padding: 16px 8px;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(88, 96, 105);
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+.inline-block a:focus{
+    border-bottom: 2px solid rgb(227, 98, 9);
+    color: #292D32;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.inline-block a:hover{
+    border-bottom: 2px solid rgba(27,31,35,0.2);
+    color: #292D32;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+.inline-block span{
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27,31,35,0.08);
+    border-radius: 20px;
+}
+.repo-list-div{
+    position: relative;
+}
+.repo-record-container{
+    margin-top: 24px;
+}
+.popular-repo-text{
+    margin-bottom: 8px;
+    margin-right: 16px;
+}
+.text-first{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(36, 41, 46);
+   
+}
+.text-second{
+    margin-top: 4px;
+    float: right;
+    font-size: 13px;
+    font-weight: 400px;
+    color: #586069;
+    cursor: pointer;
+}
+.text-second:hover{
+    color: #0366d6;
+}
+.repo-data-ul{
+    margin-bottom: 24px !important;
+}
+.repo-data-ul li{
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 16px;
+    margin-right: 12px;
+    border: 1px solid rgb(209, 213, 218);
+    width: 347px;
+    border-radius: 3px;
+}
+.repo-p{
+    margin-top: 8px !important;
+    height: 2px;
+    margin-bottom: 16px !important;
+}
+.git-title{
+    color: rgb(3, 102, 214);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.git-type{
+    color: #586069;
+    font-size: 12px;
+}
+.type-logo{
+    display: inline-block;
+    /* background: rgb(227, 76, 38); */
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    line-height: 18px;
+}
+.scroll-bar{
+    display: none;
+    position: fixed;
+    margin: auto;
+    clear: both;
+    width: 495px;
+    height: 54.5px;
+    background: rgba(255, 255, 255,0);
+    top: 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(209, 213, 218);
+}
+.rounded-img{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    margin-left: 95px;
+    margin-right: 4px;
+}
+.usr-name{
+    color: rgb(36, 41, 46);
+    font-size: 14px !important; 
+    font-weight: 600; 
+}

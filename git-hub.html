@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gitHubApp">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/git-hub-styledheet.css">
+</head>
+
+<body>
+    <div class="container" ng-controller="gitHubAppCtrl">
+        <header class="header">
+            <div class="header-div">
+                <div class="header-git-logo ilb">
+                    <svg class="octicon octicon-mark-github" viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </div>
+                <div class="search-div ilb">
+                    <input class="search" type="search" placeholder="Search GitHub">
+                </div>
+                <div class="nab-bar ilb">
+                    <ul class="nav-bar-ul ilb">
+                        <li>
+                            <a href="#">Pull request</a>
+                        </li>
+                        <li>
+                            <a href="#">Issues</a>
+                        </li>
+                        <li>
+                            <a href="#">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="#">Explore</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="settings ilb">
+                    <div class="octicon-bell-div ilb">
+                        <a href="#">
+                            <svg class="octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="octicon-plus-div ilb">
+                        <a href="#">
+                            <svg class="octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="avatar-div ilb">
+                        <a href="#">
+                            <img alt="@vsm-suraj" class="avatar" src="https://avatars1.githubusercontent.com/u/37971273?s=40&amp;v=4" height="20" width="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main body -->
+        <main class="main">
+            <div class="main-div">
+                <div class="profile-div">
+                    <a class="profile-img-link" href="#">
+                        <img class="profile-img" src="https://avatars1.githubusercontent.com/u/37971273?s=460&amp;v=4" width="230" height="230" alt="">
+                    </a>
+                    <div class="user-name-div">
+                        <span class="user-name">VSM-SURAJ</span>
+                    </div>
+                    <div class="add-bio-div">
+                        <button type="button" class="add-bio btn" ng-click="addBio()">Add a bio</button>
+                    </div>
+                    <div class="textarea-div">
+                        <textarea rows="7" class="textarea" placeholder="Add bio"></textarea>
+                        <div class="textarea-btn-div">
+                            <button class="save-btn ilb textarea-btn" ng-click="submit()">Save</button>
+                            <button class="cancel-btn ilb textarea-btn" ng-click="cancel()">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="edit-profile-div">
+                        <div class="edit-profile-btn-div">
+                            <button class="edit-profile btn">Edit profile</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="">
+                            <li class="">
+                                <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path>
+                                </svg>
+                                <time class="datetime" datetime="">Joined 19 days ago</time>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content-div ilb">
+                    <div class="nav-div">
+                        <div class="main-content-nav-bar">
+                            <ul class="inline-block">
+                                <a href="#">
+                                    Overview
+                                </a>
+                                <a href="#">
+                                    Repositories
+                                    <span>9</span>
+                                </a>
+                                <a href="#">
+                                    Stars
+                                    <span>0</span>
+                                </a>
+                                <a href="#">
+                                    Followers
+                                    <span>0</span>
+                                </a>
+                                <a href="#">
+                                    Following
+                                    <span>0</span>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="repo-list-div">
+                        <div class="repo-record-container">
+                            <div class="popular-repo-text">
+                                <span class="text-first">Popular repositories</span>
+                                <span class="text-second">Customize your pinned repositories</span>
+                            </div>
+                            <ul class="repo-data-ul">
+                                <li ng-repeat="gitdata in githubData">
+                                    <span>
+                                        <span class="git-title">
+                                            <a href="#">
+                                                {{gitdata.title}}
+                                            </a>
+                                        </span>
+                                        <p class="repo-p"></p>
+                                        <span class="git-type">
+                                            <span style="background-color: {{gitdata.color}}" class="type-logo"></span> {{gitdata.type}} </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="scroll-bar">
+        <img class="rounded-img" src="https://avatars2.githubusercontent.com/u/37971273?s=64&amp;v=4" width="32" height="32" alt="@vsm-suraj"
+            data-hovercard-user-id="37971273">
+            <span class="usr-name">vsm-suraj</span>
+    </div>
+    <script src="lib/angular1.1.5/angular.min.js"></script>
+    <script src="lib/angular1.1.5/angular-resource.min.js"></script>
+    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/github-app.js"></script>
+    <script src="js/controllers/github-app-ctrl.js"></script>
+    <script src="js/services/github-app-data-service.js"></script>
+</body>
+
+</html>
