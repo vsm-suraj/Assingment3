@@ -2,17 +2,17 @@ gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData) {
 
     $scope.submit = function () {
         //code
-    }
+    };
 
     $scope.cancel = function () {
         $('.textarea-div').css('display', 'none');
         $('.add-bio').show();
-    }
+    };
 
     $scope.addBio = function () {
         $('.add-bio').hide();
         $('.textarea-div').css('display', 'block');
-    }
+    };
 
     $scope.getData = function () {
         githubRepoData.githubData().then(function (data) {

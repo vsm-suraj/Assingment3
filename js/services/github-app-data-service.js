@@ -12,5 +12,5 @@ gitHubApp.service('githubRepoData', function ($http, $q) {
             deferred.reject(status)
         });
         return deferred.promise;
-    }
-})
+    };
+});
