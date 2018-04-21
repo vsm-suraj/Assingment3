@@ -1,11 +1,13 @@
 .b {
     border: 1px solid springgreen;
 }
-.container-width{
+
+.container-width {
     margin: auto;
     width: 1012px;
     border: 1px solid springgreen;
 }
+
 .ftc {
     width: fit-content;
 }
@@ -25,9 +27,6 @@ body {
     padding: 0px;
 }
 
-.container {
-    
-}
 
 .header {
     padding-top: 12px;
@@ -41,8 +40,6 @@ body {
     max-width: 1012px;
     height: 32px;
 }
-
-.search-div {}
 
 .octicon-mark-github {
     height: 32px;
@@ -122,9 +119,6 @@ ul {
 }
 
 /* main body */
-
-.main {}
-
 .main-div {
     margin-left: auto;
     margin-right: auto;
@@ -189,9 +183,11 @@ ul {
     background-color: #eff3f6;
     background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
 }
-.textarea-div{
+
+.textarea-div {
     display: none;
 }
+
 .textarea {
     padding: 6px 8px;
     border: 1px solid #d1d5da;
@@ -261,46 +257,53 @@ ul {
     text-align: center;
     border-bottom: 2px solid transparent;
 }
-.inline-block a:focus{
+
+.inline-block a:focus {
     border-bottom: 2px solid rgb(227, 98, 9);
     color: #292D32;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-weight: 600;
 }
-.inline-block a:hover{
-    border-bottom: 2px solid rgba(27,31,35,0.2);
+
+.inline-block a:hover {
+    border-bottom: 2px solid rgba(27, 31, 35, 0.2);
     color: #292D32;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
-.inline-block span{
+
+.inline-block span {
     display: inline-block;
     padding: 2px 5px;
     font-size: 12px;
     font-weight: 600;
     line-height: 1;
     color: #586069;
-    background-color: rgba(27,31,35,0.08);
+    background-color: rgba(27, 31, 35, 0.08);
     border-radius: 20px;
 }
-.repo-list-div{
+
+.repo-list-div {
     position: relative;
 }
-.repo-record-container{
+
+.repo-record-container {
     margin-top: 24px;
 }
-.popular-repo-text{
+
+.popular-repo-text {
     margin-bottom: 8px;
     margin-right: 16px;
 }
-.text-first{
+
+.text-first {
     font-weight: 400;
     font-size: 16px;
     color: rgb(36, 41, 46);
-   
 }
-.text-second{
+
+.text-second {
     margin-top: 4px;
     float: right;
     font-size: 13px;
@@ -308,13 +311,16 @@ ul {
     color: #586069;
     cursor: pointer;
 }
-.text-second:hover{
+
+.text-second:hover {
     color: #0366d6;
 }
-.repo-data-ul{
+
+.repo-data-ul {
     margin-bottom: 24px !important;
 }
-.repo-data-ul li{
+
+.repo-data-ul li {
     display: inline-block;
     margin-bottom: 16px;
     padding: 16px;
@@ -323,50 +329,56 @@ ul {
     width: 347px;
     border-radius: 3px;
 }
-.repo-p{
+
+.repo-p {
     margin-top: 8px !important;
     height: 2px;
     margin-bottom: 16px !important;
 }
-.git-title{
+
+.git-title {
     color: rgb(3, 102, 214);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     font-size: 14px;
 }
-.git-type{
+
+.git-type {
     color: #586069;
     font-size: 12px;
 }
-.type-logo{
+
+.type-logo {
     display: inline-block;
-    /* background: rgb(227, 76, 38); */
     border-radius: 50%;
     height: 12px;
     width: 12px;
     line-height: 18px;
 }
-.scroll-bar{
+
+.scroll-bar {
     display: none;
     position: fixed;
     margin: auto;
     clear: both;
     width: 495px;
     height: 54.5px;
-    background: rgba(255, 255, 255,0);
+    background: rgba(255, 255, 255, 0);
     top: 0;
     text-align: center;
     border-bottom: 1px solid rgb(209, 213, 218);
 }
-.rounded-img{
+
+.rounded-img {
     position: relative;
     top: 10px;
     display: inline-block;
     margin-left: 95px;
     margin-right: 4px;
 }
-.usr-name{
+
+.usr-name {
     color: rgb(36, 41, 46);
-    font-size: 14px !important; 
-    font-weight: 600; 
+    font-size: 14px !important;
+    font-weight: 600;
 }
