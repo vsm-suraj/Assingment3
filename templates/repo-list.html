@@ -1,0 +1,17 @@
+<div class="repo-list-container">
+    <div class="repo-list-search-div">
+        <input class="search-repo" type="text" ng-model="search" placeholder="Search Repositories" />
+        <button class="repo-type-button"><span class="type">Type:</span><span>All</span></button>
+        <button class="repo-language-button"><span class="language">Language:</span><span>All</span></button>
+        <button class="create-new-repo-button"><span>New</span></button>
+    </div>
+    <ul class="repo-list-ul">
+        <li class="repo-list-li" ng-repeat="repo in repoList | filter:search">
+            <span class="repo-list-title"> <a href="#">{{repo.title}}</a> </span>
+            <h1></h1>
+            <span class="repo-list-color" style="background-color: {{repo.color}}"></span>
+            <span class="repo-list-type"> {{repo.type}} </span>
+            <span class="repo-list-update-time"> {{repo.time}} </span>
+        </li>
+    </ul>
+</div>

@@ -2,7 +2,7 @@ gitHubApp.service('githubRepoData', function ($http, $q) {
     this.githubData = function () {
         var deferred = $q.defer();
         var url = 'json/'
-        var fileName = 'repo-data.json'
+        var fileName = 'overview-data.json'
         $http({
             method: 'GET',
             url: url + fileName,

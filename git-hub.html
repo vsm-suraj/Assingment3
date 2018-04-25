@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/git-hub-styledheet.css">
+    <link rel="stylesheet" href="css/repo-list-stylsheet.css">
+    <link rel="stylesheet" href="css/overview-stylesheet.css">
 </head>
 
 <body>
@@ -100,10 +102,10 @@
                     <div class="nav-div">
                         <div class="main-content-nav-bar">
                             <ul class="inline-block">
-                                <a href="#">
+                                <a href="#/overview">
                                     Overview
                                 </a>
-                                <a href="#">
+                                <a href="#/repositories">
                                     Repositories
                                     <span>9</span>
                                 </a>
@@ -124,24 +126,7 @@
                     </div>
                     <div class="repo-list-div">
                         <div class="repo-record-container">
-                            <div class="popular-repo-text">
-                                <span class="text-first">Popular repositories</span>
-                                <span class="text-second">Customize your pinned repositories</span>
-                            </div>
-                            <ul class="repo-data-ul">
-                                <li ng-repeat="gitdata in githubData">
-                                    <span>
-                                        <span class="git-title">
-                                            <a href="#">
-                                                {{gitdata.title}}
-                                            </a>
-                                        </span>
-                                        <p class="repo-p"></p>
-                                        <span class="git-type">
-                                            <span style="background-color: {{gitdata.color}}" class="type-logo"></span> {{gitdata.type}} </span>
-                                    </span>
-                                </li>
-                            </ul>
+                            <ng-view></ng-view>
                         </div>
                     </div>
                 </div>
@@ -149,16 +134,23 @@
         </main>
     </div>
     <div class="scroll-bar">
-        <img class="rounded-img" src="https://avatars2.githubusercontent.com/u/37971273?s=64&amp;v=4" width="32" height="32" alt="@vsm-suraj"
-            data-hovercard-user-id="37971273">
+        <img class="rounded-img" src="https://avatars2.githubusercontent.com/u/37971273?s=64&amp;v=4" width="32" height="32" alt="@vsm-suraj">
             <span class="usr-name">vsm-suraj</span>
     </div>
+    <div>
+        
+    </div>
+    
+    
     <script src="lib/angular1.1.5/angular.min.js"></script>
     <script src="lib/angular1.1.5/angular-resource.min.js"></script>
     <script src="lib/jquery/jquery-3.3.1.min.js"></script>
     <script src="js/github-app.js"></script>
     <script src="js/controllers/github-app-ctrl.js"></script>
     <script src="js/services/github-app-data-service.js"></script>
+    <script src="js/services/repo-list-service.js"></script>
+    <script src="js/services/contribution-data-service.js"></script>
+    <script src="js/directive/hover-text-directive.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,57 @@
+<div class="overview-container">
+    <div class="popular-repo-text">
+        <span class="text-first">Popular repositories</span>
+        <span class="text-second">Customize your pinned repositories</span>
+    </div>
+    <ul class="repo-data-ul">
+        <li ng-repeat="gitdata in githubData">
+            <span>
+                <span class="git-title">
+                    <a href="#">
+                        {{gitdata.title}}
+                    </a>
+                </span>
+                <p class="repo-p"></p>
+                <span class="git-type">
+                    <span style="background-color: {{gitdata.color}}" class="type-logo"></span> {{gitdata.type}} </span>
+            </span>
+        </li>
+    </ul>
+
+    <div class="repo-graph-heading-div">
+        <span class="repo-graph-left-heading">121 contributions in the last year</span>
+        <span class="contribution-setting"><a href="#">Contribution setting</a></span>
+    </div>
+    <div class="repo-graph">
+        <div class="months">
+            <span>May</span>
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Aug</span>
+            <span>Sep</span>
+            <span>Oct</span>
+            <span>Nov</span>
+            <span>Dec</span>
+            <span>Jan</span>
+            <span>Feb</span>
+            <span>Mar</span>
+            <span>Apr</span>
+        </div>
+        <div class="week">
+            <div>Mon</div>
+            <div>Web</div>
+            <div>Fri</div>
+        </div>
+        <div class="contributions-graph">
+            <ul class="contributions-graph-ul">
+                <li class="contributions-graph-li" data-count="{{contributionData.dataCount}}" data-date="{{contributionData.dataDate}}"
+                    ng-repeat="contributionData in contributionsData" hover-text> </li>
+            </ul>
+        </div>
+
+        <!-- to display the contribution detail on mouse hover -->
+        <div class="hover"></div>
+
+    </div>
+
+</div>

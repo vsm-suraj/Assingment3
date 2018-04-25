@@ -1,4 +1,4 @@
-gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData) {
+gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData, repoListDataService, contributionsDataService) {
 
     $scope.submit = function () {
         //code
@@ -14,12 +14,24 @@ gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData) {
         $('.textarea-div').css('display', 'block');
     };
 
+    /* to get the github overview data */
     $scope.getData = function () {
         githubRepoData.githubData().then(function (data) {
             $scope.githubData = data;
         });
     };
     $scope.getData();
+
+    /* to get the ropositories list */
+    repoListDataService.getRepoListData().then(function (data) {
+        $scope.repoList = data;
+    })
+
+    /* to get contributions data from service */
+    contributionsDataService.getcontributionsData().then(function (data) {
+        $scope.contributionsData = data;
+        console.log(data);
+    })
 
     $(window).scroll(function () {
         if (window.scrollY > 100) {
@@ -34,4 +46,8 @@ gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData) {
         };
     });
 
+    $scope.list = [];
+    for( i=0; i<364; i++) {
+        $scope.list.push(i);
+    }
 });
