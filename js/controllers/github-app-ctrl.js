@@ -1,19 +1,5 @@
 gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData, repoListDataService, contributionsDataService) {
 
-    $scope.submit = function () {
-        //code
-    };
-
-    $scope.cancel = function () {
-        $('.textarea-div').css('display', 'none');
-        $('.add-bio').show();
-    };
-
-    $scope.addBio = function () {
-        $('.add-bio').hide();
-        $('.textarea-div').css('display', 'block');
-    };
-
     /* to get the github overview data */
     $scope.getData = function () {
         githubRepoData.githubData().then(function (data) {
@@ -46,8 +32,18 @@ gitHubApp.controller('gitHubAppCtrl', function ($scope, githubRepoData, repoList
         };
     });
 
-    $scope.list = [];
-    for( i=0; i<364; i++) {
-        $scope.list.push(i);
-    }
+    
+    $scope.cancel = function () {
+        $('.textarea-div').css('display', 'none');
+        $('.add-bio').show();
+    };
+
+    $scope.addBio = function () {
+        $('.add-bio').hide();
+        $('.textarea-div').css('display', 'block');
+    };
+    $scope.submit = function () {
+        //code
+    };
+
 });

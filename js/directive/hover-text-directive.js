@@ -1,6 +1,6 @@
 gitHubApp.directive('hoverText', function () {
     return function (scope, element) {
-        element.bind('mousemove', function (e) {
+        element.on('mousemove', function (e) {
             var dataCount = $(this).attr('data-count');
             var dataDate = $(this).attr('data-date');
             var contribution = 'No contribution';

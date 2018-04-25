@@ -1,11 +1,6 @@
 .container-width {
     margin: auto;
     width: 1012px;
-    border: 1px solid springgreen;
-}
-
-.ftc {
-    width: fit-content;
 }
 
 .inline-block,

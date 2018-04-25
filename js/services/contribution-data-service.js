@@ -15,5 +15,5 @@ gitHubApp.service('contributionsDataService', function ($http, $q) {
             deferred.reject(data);
         });
         return deferred.promise;
-    }
-})
+    };
+});
